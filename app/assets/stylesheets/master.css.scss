@@ -51,12 +51,41 @@ p {
 	background-repeat: no-repeat;
 }
 
-.container {
+.container .writing {
  	background-color: #000;
-    opacity: 0.5;
     background: black;
+    opacity: 0.5;
 }
+
+
 
 .row {
 	margin-left: 97px; 
 }
+
+
+.writing {
+	color: #fff;
+}
+
+
+.footer {
+	bottom: 0;
+	height: 60px;
+	width: 100%;
+	background-color: #000000;
+	margin: 43px 0 0 0;
+}
+
+.footer p.text-muted {
+	color: #fff;
+}
+
+.navbar-nav > li > a {
+	margin-top: 30px; 
+}
+
+.text-muted {
+	color: #fff;
+}
+

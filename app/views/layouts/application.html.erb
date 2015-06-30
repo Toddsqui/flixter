@@ -54,21 +54,45 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
+         <%= image_tag 'playbutton.png' %>
           <h2>Heading</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
+         <%= image_tag 'televisionbutton.png' %>
           <h2>Heading</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
        </div>
+    
         <div class="col-md-4">
+           <%= image_tag 'diamondbutton.png' %>
           <h2>Heading</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
+
+       <footer class="footer">
+      <div class="container">
+        <p class="text-muted col-md-3">Teachers<br />
+        Teach a Course<br />
+        View Dashboard</p>
+        <p class="text-muted col-md-3">About<br />
+        Team <br />
+        Careers <br /></p>
+        <p class="text-muted col-md-3">Contact<br />
+        Webmaster Todd<br />
+        South Korea</p>
+        <p class="text-muted col-md-3">Social<br />
+            <%= image_tag 'facebook.png' %>
+            <%= image_tag 'twitter.png' %>
+            <%= image_tag 'instagram.png' %>
+
+        </p>
+      </div>
+    </footer>
 
 <%= yield %>
 
