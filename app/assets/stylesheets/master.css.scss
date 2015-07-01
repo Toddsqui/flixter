@@ -53,8 +53,7 @@ p {
 
 .container .writing {
  	background-color: #000;
-    background: black;
-    opacity: 0.5;
+ 	background-color: rgba(0,0,0,0.5);
 }
 
 
@@ -70,16 +69,14 @@ p {
 
 
 .footer {
-	bottom: 0;
-	height: 60px;
 	width: 100%;
 	background-color: #000000;
 	margin: 43px 0 0 0;
+	position: absolute;
 }
 
-.footer p.text-muted {
-	color: #fff;
-}
+.footer p { margin-bottom: 0; } /* Remove footer bottom spacing */
+.header-container > .row { margin-right: 0; } /* Remove bottom slider */
 
 .navbar-nav > li > a {
 	margin-top: 30px; 
