@@ -41,6 +41,14 @@
   </div><!-- /.container-fluid -->
 </nav>
 
+<% if notice.present? %>
+<p class="alert alert-info"><%= notice %></p>
+<% end %>
+<% if alert.present? %>
+<p class="alert alert-danger"><%= alert %></p>
+<% end %>
+
+
 <div class="jumbotron">
       <div class="container">
       <div class="writing col-xs-10 col-offset-1">
