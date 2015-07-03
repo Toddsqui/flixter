@@ -73,8 +73,7 @@ p {
 .footer {
 	width: 100%;
 	background-color: #000000;
-	margin: 43px 0 0 0;
-	position: absolute;
+	position: fixed;
 }
 
 .footer p { margin-bottom: 0; } /* Remove footer bottom spacing */
@@ -112,3 +111,4 @@ p {
 .booyah-box h2, .booyah-box h1 {
   margin:10px;
 }
+
