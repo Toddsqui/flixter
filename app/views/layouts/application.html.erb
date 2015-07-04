@@ -8,6 +8,7 @@
 </head>
 <body>
 
+<div id="wrap">
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -56,9 +57,16 @@
 
        
 
-    <footer class="footer">
-      <div class="container">
-         <p class="text-muted col-md-3">Teachers<br />
+
+<%= yield %>
+
+</div>
+
+<br class="clr" />
+
+<div id="footer">
+  <div class="container">
+<p class="text-muted col-md-3">Teachers<br />
            Teach a Course<br />
            View Dashboard</p>
          <p class="text-muted col-md-3">About<br />
@@ -72,9 +80,9 @@
            <%= image_tag 'twitter.png' %>
            <%= image_tag 'instagram.png' %>
         </p>
-      </div>
-    </footer>
-<%= yield %>
+  </div>
+</div>
+
 
 </body>
 </html>
