@@ -5,6 +5,19 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+<script src="http://vjs.zencdn.net/4.12/video.js"></script>
+<style>
+.video-js {padding-top: 56.25%}
+.vjs-fullscreen {padding-top: 0px}
+</style>
+<style type="text/css">
+  .vjs-default-skin .vjs-play-progress,
+  .vjs-default-skin .vjs-volume-level { background-color: #2a8ec4 }
+  .vjs-default-skin .vjs-control-bar,
+  .vjs-default-skin .vjs-big-play-button { background: rgba(69,48,48,0.7) }
+  .vjs-default-skin .vjs-slider { background: rgba(69,48,48,0.2333333333333333) }
+</style>
 </head>
 <body>
 
