@@ -5,23 +5,18 @@ class LessonsController < ApplicationController
 	def show
 	end
 
-	def create
-  	@lesson = current_lesson.section.course(course_params)
-    if current_user.enrolled_in?
-  	  redirect_to lesson_path(@lesson)
+	def require_authorized_for_current_lesson
+      course = section.course
+  	  @lesson = current_lesson.section.course(course)
+      section = @lesson.section
+    if current_user.enrolled_in?(course)
+  	  redirect_to course_path(course)
     else
-      redirect_to lesson_path, :alert => 'You Are Not Enrolled in this Course!'
+      redirect_to course_path, :alert => 'You Are Not Enrolled in this Course!'
     end
   end
 
   private
-
-  def require_authorized_for_current_lesson
-   if current_user.enrolled? 
-   		redirect_to_
-      render :text => "Unauthorized", :status => :Unauthorized
-    end
-  end
 
 
   helper_method :current_lesson
