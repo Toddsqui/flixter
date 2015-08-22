@@ -4,7 +4,7 @@
       update: function( event, ui ) {
         $.ajax({
           type: 'PUT',
-          url: ui.item.data('update-url'),
+          url: ui.item.data('item-url'),
           dataType: 'json',
           data: { lesson: { row_order_position: ui.item.index() } }
         });
@@ -32,17 +32,32 @@
     <%= link_to 'Add a new section...', new_instructor_course_section_path(current_course), :class => 'btn btn-primary btn-lg' %>
     </div>
 
-    <ul>
+    <ul class="sections">
       <% current_course.sections.each do |section| %>
-        <li>
+        <li class="section-li">
+        <div class="header">
+        <span class="glyphicon glyphicon-list"></span>
           <%= section.title %>
+          </div>
               <%= link_to 'New Lesson', new_instructor_section_lesson_path(section), :class => 'pull-right btn btn-primary btn-xs' %>
+                <br class="clr" />
+                <br class="clr" />
                   <ul class="lessons">
                      <% section.lessons.rank(:row_order).each do |lesson| %>
-                     <li data-item-url="<%= instructor_lesson_path(lesson) %>">
+                     <li data-update-url="<%= instructor_lesson_path(lesson) %>">
+                     <div class="col-xs-1">
+                     <br />
+                          <span class="glyphicon glyphicon-list"></span>
+                          </div>
+                          <div class="col-xs-11 text-center">
+                          <p>
                          <b> <%= lesson.title %></b>
-                           -
+                         </p>
+                         <p>
                          <%= lesson.subtitle %>
+                         </p>
+                         </div>
+                         <br class="clr" />
                      </li>
              <% end %>
           </ul>
