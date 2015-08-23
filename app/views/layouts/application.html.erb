@@ -82,20 +82,43 @@
 
 <div id="footer">
   <div class="container">
-<p class="text-muted col-md-3">Teachers<br />
+<div class="col-xs-12 col-sm-3">
+        <b>Teachers</b>
+        <br />
            <%= link_to 'Teach a Course', new_instructor_course_path %>
-           View Dashboard</p>
-         <p class="text-muted col-md-3">About<br />
-           Team <br />
-           Careers <br /></p>
-         <p class="text-muted col-md-3">Contact<br />
-           Webmaster Todd<br />
-           South Korea</p>
-         <p class="text-muted col-md-3">Social<br />
-           <%= image_tag 'facebook.png' %>
-           <%= image_tag 'twitter.png' %>
-           <%= image_tag 'instagram.png' %>
-        </p>
+           <br />
+           <%= link_to 'My Dashboard', dashboard_path %>
+           </div>
+         <div class="col-xs-12 col-sm-3">
+         <b>About</b>
+         <br />
+           <%= link_to 'Team', '#' %>
+           <br />
+           <%= link_to 'Careers', '#' %>
+           <br />
+            <%= link_to 'Privacy Policy', '#' %>
+           </div>
+         <div class="col-xs-12 col-sm-3">
+         <b>Contact</b>
+         <br />
+           toddsqui@gmail.com
+           <br />
+           South Korea
+           </div>
+         <div class="col-xs-12 col-sm-3 social">
+         <b>Social</b>
+         <br />
+         <br />
+          <%= link_to 'http://www.facebook.com/toddsqui' do %>
+           <%= image_tag 'facebook.png', :class => 'social-button' %>
+           <% end %>
+           <%= link_to 'http://www.twitter.com/toddsqui' do %>
+           <%= image_tag 'twitter.png', :class => 'social-button' %>
+           <% end %>
+           <%= link_to 'http://www.google.com' do %>
+           <%= image_tag 'instagram.png', :class => 'social-button' %>
+           <% end %>
+        </div>
   </div>
 </div>
 
