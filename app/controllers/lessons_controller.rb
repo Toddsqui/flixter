@@ -6,11 +6,11 @@ class LessonsController < ApplicationController
 	end
 
 	def require_authorized_for_current_lesson
-    if current_user.lessons != current_user
-      return render :text => 'Unauthorized', :status => :Unauthorized
-    else
-      redirect_to course_path
-    end
+    # if current_user.lessons != current_user
+    #   return render :text => 'Unauthorized', :status => :Unauthorized
+    # else
+    #   redirect_to course_path
+    # end
   end
 
   private
